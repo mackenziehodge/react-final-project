@@ -21,7 +21,7 @@ return( <div className="Weather">
 <div className="row">
     <div className="col-6">
         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="scattered clouds"/>
-   -4°C </div>
+   <h2>-4°C</h2> </div>
    <div className="col-6">
        <ul><li>Precipitation 15%</li>
        <li>Humidity:98%</li>
