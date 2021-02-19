@@ -5,7 +5,7 @@ import Weather from "./Weather"
 export default function App() {
   return (
     <div className="App">
-    <Weather />
+    <Weather defaultCity="Toronto"/>
     <div className="footer"><a href="https://github.com/mackenziehodge/react-final-project" className="code-link">
          Open Sourced Code {""}
       </a> 
