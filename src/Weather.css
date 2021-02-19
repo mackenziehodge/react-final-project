@@ -18,11 +18,15 @@
 .Weather h2 {
   font-size: 20px;
 }
-.Weather img {
-  margin-right: 10px;
+.Weather canvas {
+  height: 54px;
+  width: 54px;
+  margin-top: 5px;
+  margin-right: 5px;
+  display: inline-block;
 }
 .Weather .temperature {
-  font-size: 44px;
+  font-size: 45px;
 }
 .Weather .unit {
   font-size: 16px;

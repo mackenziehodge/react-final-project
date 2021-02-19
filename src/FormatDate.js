@@ -17,7 +17,7 @@ let month=months[props.date.getMonth()];
 
 let year=props.date.getFullYear();
 
-    return <div>{day} {month} {date}, {year}<br/> {hours}:{minutes}  </div>;
+    return <div>{hours}:{minutes}<br />{day} {month} {date}, {year}  </div>;
 
 
 }
