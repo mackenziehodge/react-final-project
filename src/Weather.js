@@ -10,7 +10,6 @@ export default function Weather(props){
     function handleResponse(response){
 
         setWeatherData({
-            
             loaded:true,
             temperature:response.data.main.temp,
             city:response.data.name,
