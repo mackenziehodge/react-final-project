@@ -9,8 +9,9 @@ export default function Weather(props){
     const[weatherData, setWeatherData]=useState({loaded: false});
     const[city, setCity]=useState(props.defaultCity);
     function handleResponse(response){
-
+console.log(response.data)
         setWeatherData({
+            
             loaded:true,
             temperature:response.data.main.temp,
             city:response.data.name,
@@ -19,6 +20,7 @@ export default function Weather(props){
             icon:response.data.weather[0].icon,
             description :response.data.weather[0].description,
 date: new Date(response.data.dt*1000),
+feels:(response.data.main.feels_like)
         });
 
     }
@@ -55,7 +57,7 @@ return(
         onChange={handleChangeCity}/>
         </div>
         <div className="col-3">
-        <input type="submit" value="Search"className="btn btn-primary" />
+        <input type="submit" value="Search"className="button" />
     
     </div>
     </div>
